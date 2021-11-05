@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FOODBOMB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background-image:url(https://64.media.tumblr.com/d7338135d5abcb9cb4cbab9c18a16e5d/tumblr_og7ctm73Oz1uxvvvzo1_500.gifv);
+  background-size: 50%;
+  background-size: 1455px 400px;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-attachment:scroll;
+  color: 	#000000;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar span.right {
+  float: right;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.script {
+  overflow: hidden;
+  float: right;
+  float: left;
+  display: block;
+  color: #EFE6DD;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+} 
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 300%; /* IE10 */
+  flex: 30%;
+  background-color:	#E8DbC9;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.breaking news{
+ position: relative;
+ text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:	#E8DbC9;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Chinese Food</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="Homepage.html">Home</a>
+  <a href="Filipino.html">Filipino</a>
+  <a href="Japanese.html">Japanese</a>
+  <a href="Italian.html">Italian</a>
+  <a href="Chinese.html">Chinese</a>
+  <a href="Korean.html">Korean</a>
+  <a href="Aboutpage.html">About</a>
+  <span class="right">
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth());
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + "/" + yyyy;
+        document.write(today);
+    </script>
+</span>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>Beef and Broccoli Ingredients</h1>
+    <ul>
+      <li>MAIN INGREDIENTS</li>
+       <li>Beef</li>
+       <li>Broccoli</li>
+       <li>Carrots</li>
+       <li>Garlic</li>
+       <li>Ginger</li>
+       <li>Green Onion</li>
+       <li>MARINADE INGREDIENTS</li>
+       <li>Water</li>
+       <li>Oyster Sauce</li>
+       <li>Baking Soda</li>
+       <li>Light Soy sauce</li>
+       <li>Cornstarch</li>
+       <li>White Pepper</li>
+       <li>Sugar</li>
+       <li>Cooking Wine</li>
+       <li>SAYCE INGREDIENTS</li>
+       <li>Oyster sauce</li>
+       <li>Dark Soy Sauce</li>
+       <li>Light Soy Sauce</li>
+       <li>Water</li>
+       <li>Cooking wine</li>
+       <li>EXTRA INGREDIENTS</li>
+       <li>Sesame Oil</li>
+       <li>Salt</li>
+    </ul>
+    <h3>Procedure</h3>
+    <ol>
+      <li>Wash Beef and cut into bite size pieces. Then create beef marinade. Put the beef in the marinade</li>
+      <li>Cut broccoli, carrots, ginger, garlic, green onion</li>
+      <li>Make sauce. Blanch the broccoli or a few minutes and take it out. Cook beef for a few minutes then add in veggies and stir-fry</li>
+      <li>Add sauce and stir-fry again AND YOUR'RE DONE!</li>
+    </ol>
+    <br>
+    <h1>Congee Ingredients</h1>
+    <ul>
+      <li>Rice</li>
+      <li>Water</li>
+      <li>Tomato</li>
+      <li>Radish</li>
+      <li>Chicken or Mushroom powder</li>
+      <li>White or black pepper</li>
+      <li>Century egg</li>
+      <li>Green Onion (optional</li>
+      <li>Soy sauce (To Taste)</li>
+      <li>Fish Sauce (To Taste)</li>
+    </ul>
+    <h3>Procedure</h3>
+    <ol>
+      <li>Clean rice and soak in cold water after</li>
+      <li>Transfer rice into pressure coker and add water, chicken powder, and whte pepper. Cook on high pressure for 20 minutes</li>
+      <li>Once pressure valve goes up, heat in lowest settings and let it rest for a few minutes before releasing pressure</li>
+      <li>Dice century egg and green onions and put it for garnish. Add fish sauce or Soy sauce to your taste. AND YOU'RE DONE!</li>
+    </ol>
+  </div>
+
+  <div class="main">
+    <h1>Chinese Beef and Brocoli</h1>
+    <h5>Nov 5, 2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=n_0JYAQzYAg">
+      <img src="https://www.thespruceeats.com/thmb/Jsse9-LFd0WslLQnDpbQ0wZ8FdY=/2000x2000/smart/filters:no_upscale()/beef-with-broccoli-stir-fry-recipe-4081780-7cae1ba73e2948cf81c2fc1ae6c67546.jpg" alt="Beef and Brocoli" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2>This dish is believed to originate from "Gai Lan Chao Niu Rou" or Chinese Broccoli Fried Beef. 
+      Chinese immigrants couldn't find chinese broccoli and made use of the broccoli is the states or 
+      the broccoli we know and love today. It became popular around the 1920's and over time it became a 
+      dish we know and love
+    </h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Congee with Century egg</h1>
+    <h5>Nov 5, 2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.instagram.com/p/CUxkKFahDaN/">
+    <img src="https://media.istockphoto.com/photos/close-up-of-a-typical-hong-kong-and-cantonese-style-cuisine-preserved-picture-id1267612320?k=20&m=1267612320&s=612x612&w=0&h=ol6tEihRnikTLP7MruIkBD3DdRhAzdAyrfbo_OI_rpY=" alt="Congee" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2>Chinese congee is a hearty rice porridge made with rice and water. It's a staple in China often served with meat, veggies, or century eggs.
+      It's savory, smooth and warming to the soul as you eat it after it's done cooking.
+    </h2>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Q1Proj</h2>
+</div>
+
+</body>
+</html>

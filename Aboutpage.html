@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FOODBOMB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background-image:url(https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-attachment:scroll;
+  color: 	#000000;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar span.right {
+  float: right;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.script {
+  overflow: hidden;
+  float: right;
+  float: left;
+  display: block;
+  color: #EFE6DD;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+} 
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 300%; /* IE10 */
+  flex: 30%;
+  background-color:	#E0CFBE;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.breaking news{
+ position: relative;
+ text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:#E0CFBE;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>FOODBOMB</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="Homepage.html">Home</a>
+  <a href="Main.html">Filipino</a>
+  <a href="Japanese.html">Japanese</a>
+  <a href="Italian.html">Italian</a>
+  <a href="Chinese.html">Chinese</a>
+  <a href="Korean.html">Korean</a>
+  <a href="Aboutpage.html">About</a>
+  <span class="right">
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth());
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + "/" + yyyy;
+        document.write(today);
+    </script>
+</span>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>About me </h1>
+    <p>Photo of me</p>
+    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/p320x320/253739704_620474189114645_8033147663485557824_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=aee45a&_nc_ohc=k6vYJpxNHREAX9zha5C&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=32656025e47eb9d38e0076d1e67b4930&oe=61AB4E4D" alt="Photo of me" class="center">
+    <h3>Strawberry Cez Lim</h3>
+    <ul>
+      <li>Email: jlim2025@pshs.clc.edu.ph</li>
+      <li>Contact information: 00000000000</li>
+      <li>Zodiac sign: Virgo</li>
+      <li>Pronouns: She/Her</li>
+      <li>Creator of Foodbomb</li>    
+      <li>Section: Pinatubo</li>
+      <li>Age: 15</li>
+      <li>Race: Human</li>
+ 
+    </ul>
+    <br>
+    <h1>About Me</h1>
+    <p>Hi, I'm Strawberry🍓! As you can see: this website is about different foods from different countries. Well,
+        That is because I love food. Of course, I haven't tried food from all around the world, but I want people 
+        in this quarantine who cannot go outside to try these simple; but delicious dishes. I wanted to share the 
+        glorious foods that I know with those who are reading this.<p>
+    <p>Now, food is my source of energy, and feelings, and temperature. Feelings? Why? It's because food can give me 
+        different types of; feelings when I eat a certain; food. For example, Lo Mein, Lo Mein is a Chinese egg noodle 
+        dish that contains meats and veggies. Lo Mein makes me happy or misses my family from my father's side because 
+        they would always call Lo Mein as birthday noodles because we get it every time we celebrate our birthday in a 
+        Chinese restaurant.</p>
+    <p>Why temperature? For example, you're under the blazing heat, and you ate ice cream. The ice cream already makes 
+        you feel cooler as it is. It gives you so much that sometimes we find it hard to say "Thank you for the meal."
+        in their hearts</p>
+    <p>My love for food will widen more in the future. THANK YOU!</p>
+  </div>
+
+  <div class="main">
+    <h1>About the Website</h1>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="breaking news"></div>
+      <img src="https://cdn.shopify.com/s/files/1/0078/2555/5571/products/10_Coupe_Porcelain_Dinner_Plate_2.png?v=1627971595" alt="Plate" class="center">
+      <br>
+    <h3>This website is about food. I want you guys to know more about food while in quarantine. I wish to show you how to cook this type of food, whether by a recipe that I wrote or by clicking the pictures.</h3>
+    <h3>I want to share more cuisines from the Philippines, but I figured that I share the most popular first; to interest people more. Adobo and Sinigang are probably the most known Filipino dishes, and I understand why. 
+        They are hearty and so delicious, and I wanted you guys to know just in case you want something hearty and something you don't know.</h3>
+    <h3>I wanted to share more cuisines from Japan besides sushi and ramen. I know both; tempura and gyoza are already well known, but they don't get enough time to shine. Tempura for is something crunchy, well obviously, 
+        but it's something so simple and delicious. Ask help from people around you when you fry. And gyoza is a food you can make with your family since the filling of gyoza is something inside a wrapper.</h3>
+    <h3>I wanted to share the basics of Italian cuisine. So carbonara, the basics of all pasta maybe except spaghetti. It is so delicious and easy to make that I wanted you guys to know how to make carbonara the Italian way. 
+        Bruschetta, on the other hand, is something I've never made nor tasted in my life. But the dish seemed like a "will eat every day" dish. I will still eat carbonara that has cream and garlic, by the way (sorry Italians.)</h3>
+    <h3>I want to share more cuisines from China. Now I eat a lot of Chinese food, and I love them, but I have no idea what the names of the foods are. And I wanted to share with you something I don't eat often. Yes, I don't 
+        eat congee or "Lugaw" in Tagalog that much. And Yes, Beef and broccoli are called Beef and broccoli. I probably wanted; to mostly share about the century egg on the congee because it's pretty funky by itself, but eaten 
+        with something makes it quite good. And I don't think a lot of; people know Beef and broccoli because of the name which, is just Beef and broccoli.</h3>
+    <h3>I want to share one of Korea's authentic rice dishes. Bokkeumbap is now something I enjoy now that my spice tolerance is higher. It has an acidic, spicy, sweet, and salty flavor to it. And it's good and healthy. Same 
+        with Bibimbap, except it's not acidic and spicy (but can be spicy). Bibimbap has so many basic ingredients that I would have never thought that it was so delicious. I wanted to show you how basic and healthy ingredients 
+        be good.</h3>
+    <h3>Thank you! Strawberry🍓 out--></h3>
+    </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

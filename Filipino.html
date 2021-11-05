@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FOODBOMB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background-image:url(https://media4.giphy.com/media/xUA7bjfr8Q1BB3LbJm/giphy.gif);
+  background-size: 50%;
+  background-size: 1456px 400px;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-attachment:scroll;
+  color: 	#000000;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar span.right {
+  float: right;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.script {
+  overflow: hidden;
+  float: right;
+  float: left;
+  display: block;
+  color: #EFE6DD;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+} 
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 300%; /* IE10 */
+  flex: 30%;
+  background-color:	#8E331A;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.breaking news{
+ position: relative;
+ text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:	#8E331A;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Filipino Food</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="Homepage.html">Home</a>
+  <a href="Filipino.html">Filipino</a>
+  <a href="Japanese.html">Japanese</a>
+  <a href="Italian.html">Italian</a>
+  <a href="Chinese.html">Chinese</a>
+  <a href="Korean.html">Korean</a>
+  <a href="Aboutpage.html">About</a>
+  <span class="right">
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth());
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + "/" + yyyy;
+        document.write(today);
+    </script>
+</span>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>Adobo Ingredients</h1>
+    <ul>
+       <li>Soy Sauce</li>
+       <li>Vinegar</li>
+       <li>Chicken/Pork</li>
+       <li>Garlic</li>
+       <li>Whole Blackpepper corns</li>
+       <li>Bay Leaf</li>
+       <li>Ginger</li>
+       <li>Boiled egg (optional)</li>
+    </ul>
+    <h3>Procedure</h3>
+    <ol>
+      <li>Clean the chicken and ready the ingredients. Cur the chicken inro an adobo cut after.</li>
+      <li>Pour oil in a large pan or wok. Then first sauteé the ginger until brown but not burnt then onion and garlic until the garlic and onion browned a bit. After that put the chicken in.</li>
+      <li>Wait for the chicken to brown then pour the soy sauce in. Let it simmer for a bit before putting in the pepper corns and bayleaf then add water.</li>
+      <li>After about 30 mins, check if the chicken is tender and cooked. Add the vinegar if it is.</li>
+      <li>After adding the vinegar, make sure the taste is to your preference</li>
+      <li>Let it simmer for a bit to cook off the strong vinegary taste. If the chicken is cooked and the sauce is to your liking, YOU ARE FINISH!</li>
+    </ol>
+    <br>
+    <h1>Sinigang Ingredients</h1>
+    <ul>
+      <li>Pork</li>
+      <li>Onion</li>
+      <li>Tomato</li>
+      <li>Radish</li>
+      <li>Green Beans(Sitaw)</li>
+      <li>Ocra</li>
+      <li>Pechay</li>
+      <li>Green Chili</li>
+      <li>Sinigang mix (Tamarind for more authentic flavor)</li>
+    </ul>
+    <h3>Procedure</h3>
+    <ol>
+      <li>Clean your pork and ready the ingredients. While cleaning the pork, boil water in a pot. Put pork when it's boiling.</li>
+      <li>Let it boil then throw the water (scum of pork has appeared and needs to be thrown)</li>
+      <li>Put water again and tenderize the pork. If tender add in your onions, tomato and the sinigang mix.</li>
+      <li>Let it simmer for a bit then add all your ingredients left and let it cooked (Basically blanching the veggies in soup to soke the flavor)</li>
+      <li>Add fish sauce if needed. THEN YOU'RE DONE!</li>
+      
+    </ol>
+  </div>
+
+  <div class="main">
+    <h1>Chicken Adobo</h1>
+    <h5>Nov 5, 2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=2KsYYmSGKOc">
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/chickenadobo-1528749020.jpg" alt="Adobo" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2>If you are not Filipino and you've heard of adobo before; you've probably heard it from your friends 
+      who are Filipino Or your family members who have friends that are Filipino; mentioned it to you. But what 
+      is Adobo? Adobo is the Philippines ' unofficial national dish. Adobo or "Adobar" in Spanish (which means marinade) 
+      is a popular Filipino dish. Meat, Vegetables, and Seafood marinated in soy sauce, vinegar, garlic, bay leaf, and 
+      black peppercorns, which are simmered and browned in oil.
+    </h2>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Sinigang</h1>
+    <h5>Nov 5, 2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=kUBcdSeIB7s">
+    <img src="https://media.istockphoto.com/photos/sinigang-na-baboy-dish-or-filipino-pork-meat-soup-in-gray-bowl-on-picture-id1246401804?k=20&m=1246401804&s=612x612&w=0&h=igFAKF073lNaNd6KZ5m2neByNOWAXXz1Pmb9iKIVkyU=" alt="Sinigang" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2>Sinigang means stew. But Sinigang really is a sour stew from the Philippines.
+      Probably not the sour you woulde think of like sour patch kids, or sour gummy worms.
+      The sourness of the stew is just mild and also conssits of meats and veggies.
+    </h2>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Q1Proj</h2>
+</div>
+
+</body>
+</html>
