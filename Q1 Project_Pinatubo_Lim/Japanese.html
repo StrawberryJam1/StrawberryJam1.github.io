@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FOODBOMB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background-image:url(https://i.pinimg.com/originals/74/1e/a8/741ea85cd15e2fc3f8f219297c6227bf.gif);
+  background-size: 100%;
+  background-size: 1455px 300px;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-attachment:scroll;
+  color: 	#000000;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar span.right {
+  float: right;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.script {
+  overflow: hidden;
+  float: right;
+  float: left;
+  display: block;
+  color: #EFE6DD;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+} 
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 300%; /* IE10 */
+  flex: 30%;
+  background-color:	#d5b07c;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.breaking news{
+ position: relative;
+ text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:	#d5b07c;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Japanese Food</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="Homepage.html">Home</a>
+  <a href="Filipino.html">Filipino</a>
+  <a href="Japanese.html">Japanese</a>
+  <a href="Italian.html">Italian</a>
+  <a href="Chinese.html">Chinese</a>
+  <a href="Korean.html">Korean</a>
+  <a href="Aboutpage.html">About</a>
+  <span class="right">
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth());
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + "/" + yyyy;
+        document.write(today);
+    </script>
+</span>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>Shrimp Tempura Ingredients</h1>
+    <ul>
+      <li>Cake Flour</li>
+      <li>Egg</li>
+      <li>Ice cold water (Make sure no ice inside)</li>
+      <li>Shrimp/Prawns</li>
+    </ul>
+    <h3>Procedure</h3>
+    <ol>
+      <li>You first put the cake flour on a fine mesh sieve then dab the side of the sieve to avoid messiness</li>
+      <li>On a seperate bowl add your egg and ice cold water then mix thoroughly. Add about helf of your cake flour but don't over mix it(Have a bit of clumps in batter)</li>
+      <li>Cut the tail of the shrimp in half the scrape off the dirt water using your knife. Cut up small incisions to prevent shrimp from curling up </li>
+      <li>Put the shrimp on the dry cake flour then dust it off. After that, dip it in the batter then fry in hot oil</li>
+      <li>Cook until shrimp is cooked or tail is red. THEN YOU'RE DONE!</li>
+    </ol>
+    <br>
+    <h1>Gyoza Ingredients</h1>
+    <ul>
+       <li>Ground Pork</li>       
+       <li>Cabbage</li>
+       <li>Soy Sauce</li>
+       <li>Nira</li>
+       <li>Shiitake mushrooms</li>
+       <li>Garlic</li>
+       <li>Ginger</li>
+       <li>Sesame oil</li>
+       <li>Sake</li>
+       <li>Salt</li>
+       <li>Pepper</li>
+       <li>Oil</li>
+       <li>Flour</li>
+       <li>Dumpling wrappers</li>
+    </ul>
+    <h3>Procedure</h3>
+    <ol>
+      <li>First, combine all your ingredients on a large bowl. Then kneed it with your hands until fully combined</li>
+      <li>After everything is combined, get your dumpling wrappers and ready a bowl of water. Add about a tablespoon of the filling in the middle of the wrapper</li>
+      <li>Wet your fingers then trace the wet fingers on the edge of the wrapper. Fold in half and make sure it's tightly sealed</li>
+      <li>Add oil in a pan then place your gyoza. While the gyoza is frying, put flour in water then pour it into the pan and cover it with a lid so the steam could cook the gyoza as well.</li>
+      <li>Once Gyoza's bottom is golden brown and cooked, put a plate on the pan then flip the pan and YOU ARE DONE!</li>
+    </ol>
+  </div>
+
+  <div class="main">
+    <h1>Shrimp Tempura</h1>
+    <h5>Nov 5, 2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=oEiNJdNLqSA">
+    <img src="https://images.pexels.com/photos/8953713/pexels-photo-8953713.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Tempura" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2>We have probably seen this or eaten it once in our lives. If not try it! But this is a famous Japanese dish called
+      Tempura. It's a lightly battered deep fried dish to a light, crispy coating. It can be served as a side dish or as the main course. 
+      As a side dish, it is served with Vegetable Tempura. As a main dish it is served by itself with it's special dipping sauce.
+    </h2>  
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Gyoza</h1>
+    <h5>Nov 5, 2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=tPLJXHdqEu4&t=2s">
+      <img src="https://images.pexels.com/photos/2098120/pexels-photo-2098120.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Gyoza" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2> Now what is Gyoza? You've probaly eaten it or may have seen it on a menu of a Japanese restaurant. 
+      Well, Gyozas are Japanese dumpling that was based off to Chinese potstickers. It is a Japanese dish 
+      that have been stuffed with meat, vegetables and seasonings. Gyoza tends to be smaller with thinner skin. 
+      This makes it have a crispier texture. It is paired with a "Ponzu" dipping sauce that is filled with flavor.
+    </h2>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Q1Proj</h2>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FOODBOMB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background-image:url(https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100%;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-attachment:scroll;
+  color: 	#000000;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar span.right {
+  float: right;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.script {
+  overflow: hidden;
+  float: right;
+  float: left;
+  display: block;
+  color: #EFE6DD;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+} 
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 300%; /* IE10 */
+  flex: 30%;
+  background-color:	#E0CFBE;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.breaking news{
+ position: relative;
+ text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:#E0CFBE;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>FOODBOMB</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="Homepage.html">Home</a>
+  <a href="Filipino.html">Filipino</a>
+  <a href="Japanese.html">Japanese</a>
+  <a href="Italian.html">Italian</a>
+  <a href="Chinese.html">Chinese</a>
+  <a href="Korean.html">Korean</a>
+  <a href="Aboutpage.html">About</a>
+  <span class="right">
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth());
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + "/" + yyyy;
+        document.write(today);
+    </script>
+</span>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>Cake pops</h1>
+    <h5>Nov 5,2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=C_hz9wzeBbY">
+      <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/cake-pops-c086d94.jpg" alt="Cake pops" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h3>DELICIOUS CAKE POP! TRY NOW AND MAKE IT! SWEET DISH!</h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Chocolate Ice Cream</h1>
+    <h5>Nov 5,2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/cake-pops-c086d94.jpg">
+    <img src="https://www.thespruceeats.com/thmb/BYOHKcXhja-ez7Fr9obgBrDHJ1Y=/3064x2042/filters:fill(auto,1)/easy-chocolate-ice-cream-recipe-1945798-hero-01-45d9f26a0aaf4c1dba38d7e0a2ab51e2.jpg" alt="Ice Cream" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2>DELICIOUS HOMEMADE CHOCOLATE ICE CREAM! TRY NOW AND MAKE IT! COOL SNACK TO CHILL YOU</h2>
+  </div>
+
+  <div class="main">
+    <h1>Sheperd's Pie</h1>
+    <h5>Nov 5,2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=Uj8BC2kcp7A">
+      <img src="https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/12/Shepherds-Pie-8.jpg" alt="Sheperd's Pie" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h1>DELICIOUS SHEPERD'PIE! TRY NOW AND MAKE IT! HEARTWARMING DISH!
+    </h1>
+    <br>
+    <br>
+    <h1>Burger</h1>
+    <h5>Nov 5,2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=oqeW9YMHweo">
+    <img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/5:4/w_3129,h_2503,c_limit/Smashburger-recipe-120219.jpg" alt="Burger" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2>DELICIOUS BURGER! TRY NOW AND MAKE IT! SAVORY SNACK TO FILL YOU UP!</h2>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Q1Proj</h2>
+</div>
+
+</body>
+</html>

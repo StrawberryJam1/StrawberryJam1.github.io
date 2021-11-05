@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FOODBOMB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 40px;
+  text-align: center;
+  background-image:url(https://pa1.narvii.com/6925/f0036fc81d782a6b611ec4ca61efa08a4dbfed0fr1-500-283_hq.gif);
+  background-size: 1455px 300px;
+  background-repeat:no-repeat;
+  background-position:top center;
+  background-attachment:scroll;
+  color: 	#000000;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 60px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar span.right {
+  float: right;
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.script {
+  overflow: hidden;
+  float: right;
+  float: left;
+  display: block;
+  color: #EFE6DD;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+} 
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 300%; /* IE10 */
+  flex: 30%;
+  background-color:	#bc6a3c;
+  padding-right: 90px;
+  padding-left: 90px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.breaking news{
+ position: relative;
+ text-align: center;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:	#bc6a3c;
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Italian Food</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="Homepage.html">Home</a>
+  <a href="Filipino.html">Filipino</a>
+  <a href="Japanese.html">Japanese</a>
+  <a href="Italian.html">Italian</a>
+  <a href="Chinese.html">Chinese</a>
+  <a href="Korean.html">Korean</a>
+  <a href="Aboutpage.html">About</a>
+  <span class="right">
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth());
+        var yyyy = today.getFullYear();
+        today = mm + '/' + dd + "/" + yyyy;
+        document.write(today);
+    </script>
+</span>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>Bruschetta Ingredients</h1>
+    <ul>
+      <li>Bread (Italian and Sour dough is more preferablle)</li>
+      <li>Tomato</li>
+      <li>Mozarella</li>
+      <li>Basil</li>
+      <li>Extra Virgin Olive Oil</li>
+      <li>Garlic</li>
+      <li>Salt (Optional)</li>
+    </ul>
+    <h3>Procedure</h3>
+    <ol>
+      <li>Toast your bread until crunchy (Or has browning but not burnt)</li>
+      <li>Cut your tomato into thin slices or small cubes and add extra virgin olive oil and chopped garlic</li>
+      <li>Get your bread rub with garlic and drizzle it with extra virgin olive oil. Then put the tomatoes in top</li>
+      <li>Add your mozarella on top of the tomatoes and add the basil for garnish and more flavor. THEN YOU"RE DONE</li>
+    </ol>
+    <br>
+    <h1>Carbonara Ingredients</h1>
+      <ul>
+       <li>Pasta noodles</li>
+       <li>egg</li>
+       <li>Pecorino Romano/Parmigiano-Reggiano</li>
+       <li>Salt</li>
+       <li>Pepper</li>
+       <li>Guanciale/Pancetta/Bacon</li>
+       <li>(NOTE: 1 egg = 100g of pasta)</li>
+    </ul>
+    <h3>Procedure</h3>
+    <ol>
+      <li>Crack 3 eggs in a bowl and 1 egg yolk and whisk until homogenous.</li>
+      <li>Shred your Pecorino Romano and add it to the eggs them whisk until homogenous. (No salt if Pecorino is only used)</li>
+      <li>Boil some pasta and cut up your Guanciale. Put your Guanciale on your cold pan and cooked it on low heat (No need for oil. Oil will be fat of meat)</li>
+      <li>Turn the heat of the pan and add your pasta directly to the pan after it's done cooking and mix until pasta is coated with oil</li>
+      <li>Add a ladle of pasta water to the egg & cheese mixture and mis until homogenous.</li>
+      <li>Add egg & cheese mixture to the pan and mix constantly for it to creamy and not scrambled eggs. AND YOU"RE  DONE!</li>
+    </ol>
+  </div>
+
+  <div class="main">
+        <h1>Bruschetta</h1>
+    <h5>Nov 5, 2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=FQtiYYu346Y">
+    <img src="https://images.pexels.com/photos/4963957/pexels-photo-4963957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bruschetta" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2>Bruschetta (way to pronounce brew-SKET-uh) is a vary famous Italian appetizer.
+      Bruschetta is served in restaurants in the U.S. and Europe, but is far from 
+      the real thing ins Italy (Not the real thing if used was tomato sauce). Bruschetta 
+      is slices of toasted bread with stuff on top. Most Common ingredients used for the
+      stuff on top is Tomato and Basil, but sometimes mozerella cheese.
+    </h2>
+    <br>
+    <h1>Carbonara</h1>
+    <h5>Nov 5, 2021</h5>
+    <div class="breaking news"></div>
+    <a href="https://www.youtube.com/watch?v=qoHnwOHLiMk&t=2s">
+      <img src="https://images.pexels.com/photos/998246/pexels-photo-998246.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Carbonara" class="center"></a>
+    <p>Click on the picture for more details</p>
+    <h2>Carbonara? Probably one of the first pasta dishes you know. With it's creamy white suace to it's salty 
+      meat and cheese. Truly a classic. Well it is one of Rome's four classic pasta. Though it was invented by 
+      Italian carbonari (charcoal workers). Made with eggs, pecorino and guanciale, truly a dish so simple yet
+      so delicous.
+    </h2>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Q1Proj</h2>
+</div>
+
+</body>
+</html>
